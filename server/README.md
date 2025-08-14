@@ -31,3 +31,23 @@ To run some unit test on the API you run the following command:
 ```shell
 pytest
 ```
+
+### Staring the server using `uvicorn`
+
+```shell
+uvicorn app:app --host 0.0.0.0 --port 8000
+```
+
+Now we can get the ipv4 ip address by running the following command:
+
+```shell
+ifconfig # mac and linux
+
+ipconfig  # windows
+```
+
+Now the base server url will look as follows:
+
+```shell
+http://192.168.1.50:8000
+```
